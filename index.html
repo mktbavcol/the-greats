@@ -609,7 +609,6 @@
 
   // Orden del ranking: puntaje de la categoría; desempate Performer, Learner, Spirit.
   // Desempate manual definido por la organización: en empate de puntaje, estas personas van primero.
-  // (Caro, 25 nov 2026: Diego Pomareda por encima de Alejandro Lotta en el empate de Performer Q3 L3.)
   const PRIORIDAD_EMPATE = ['DIEGO POMAREDA'];
   function prioridadEmpate(p){ return PRIORIDAD_EMPATE.includes((p.name||'').toUpperCase()) ? 1 : 0; }
 
